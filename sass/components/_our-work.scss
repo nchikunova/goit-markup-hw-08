@@ -1,0 +1,47 @@
+@media screen and (max-width: 1199px) {
+  .our-work {
+    display: none;
+  }
+}
+
+.our-work {
+  padding-bottom: 94px;
+
+  &-title {
+    margin-bottom: 50px;
+    color: $second-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+}
+
+.we-in-images {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  max-height: 294px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

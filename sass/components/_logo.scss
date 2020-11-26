@@ -1,0 +1,21 @@
+/* Лого-марджины */
+.logo {
+  @include logo($accent-color);
+
+  &-accent {
+    @extend %flex;
+  }
+
+  &-regular {
+    @extend %flex;
+    color: $second-text-color;
+  }
+
+  &-footer {
+    margin-bottom: 20px;
+  }
+
+  &-white {
+    color: $primary-color;
+  }
+}

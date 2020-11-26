@@ -1,0 +1,115 @@
+.member-social-links {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+
+  & .link {
+    color: #afb1b8;
+  }
+
+  & .icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: currentColor;
+  }
+}
+
+.item-social-links .link {
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %flex;
+  width: 44px;
+  height: 44px;
+  background: $main-font;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background: $accent-color;
+    color: $primary-color;
+  }
+}
+
+.item-social-links:not(:last-child) {
+  margin-right: 10px;
+}
+
+.our-team {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  text-align: center;
+  background-color: $second-color;
+
+  &-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.member {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    width: calc((100% - 60px) / 2);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.member {
+  padding-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: $second-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+
+  &-position {
+    margin-bottom: 16px;
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}

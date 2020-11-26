@@ -1,0 +1,125 @@
+.main {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-element {
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-element {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &-element {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .icon-features {
+    display: block;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 450px;
+    height: 120px;
+    background: $second-color;
+    border-radius: 4px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .element:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .element {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.icon-features {
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: $second-color;
+  border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    max-height: 120px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .element {
+    justify-content: space-between;
+    width: calc((100% - 90px) / 4);
+    text-align: left;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.section-title {
+  margin-bottom: 10px;
+  color: $second-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  text-transform: uppercase;
+
+  & p {
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+  }
+}
+
+.about-us {
+  color: $primary-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+}

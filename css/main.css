@@ -167,7 +167,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .site-nav {
-    padding: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -275,19 +274,6 @@ header {
   color: #2196f3;
 }
 
-@media screen and (min-width: 1200px) {
-  .link-current::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    margin-top: 32px;
-    background: #2196f3;
-    border-radius: 2px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .link-current::after {
     content: "";
@@ -313,6 +299,19 @@ header {
     background: #2196f3;
     border-radius: 2px;
     margin-top: 42px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 32px;
+    background: #2196f3;
+    border-radius: 2px;
   }
 }
 
@@ -500,6 +499,7 @@ header {
     margin-bottom: 30px;
     padding-top: 25px;
     padding-bottom: 25px;
+    max-width: 100%;
     width: 450px;
     height: 120px;
     background: #f5f4fa;
@@ -783,7 +783,7 @@ header {
   line-height: 1.19;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .our-clients-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1070,6 +1070,7 @@ header {
 @media screen and (max-width: 1199px) {
   .subscribe-form input {
     width: 450px;
+    max-width: 100%;
     margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -1123,7 +1124,7 @@ header {
   display: flex;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .social-links-footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1365,10 +1366,11 @@ header {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .modal {
-    min-width: 450px;
-    min-height: 609px;
+    max-width: 100%;
+    width: 450px;
+    height: 609px;
     overflow-y: scroll;
   }
 }
@@ -1439,6 +1441,7 @@ header {
 
 @media screen and (max-width: 767px) {
   .buttons-list {
+    margin-bottom: 35px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1463,12 +1466,9 @@ header {
   .btn {
     margin-bottom: 15px;
   }
-  .btn:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1513,10 +1513,7 @@ header {
   border: 1px solid #eeeeee;
 }
 
-@media screen and (min-width: 480px) {
-  .projects-item {
-    width: 450px;
-  }
+@media screen and (max-width: 767px) {
   .projects-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1524,7 +1521,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .projects-item {
-    width: 354px;
     width: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;

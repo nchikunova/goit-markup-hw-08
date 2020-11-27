@@ -126,6 +126,7 @@
   padding: 16px 15px;
   @media screen and (max-width: 1199px) {
     width: 450px;
+    max-width: 100%;
     margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -173,7 +174,7 @@
 
 .social-links-footer {
   display: flex;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     justify-content: center;
     margin-bottom: 60px;
   }

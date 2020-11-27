@@ -27,6 +27,8 @@
     margin-bottom: 50px;
     display: flex;
     @media screen and (max-width: 767px) {
+      // Забрала -15px у родителя, чтобы не обнулять через nth-child крайние марджины
+      margin-bottom: 35px;
       flex-wrap: wrap;
     }
     justify-content: center;
@@ -53,8 +55,8 @@
 .btn {
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
+    // &:nth-last-child(-n + 2) {
+    //   margin-bottom: 0;
+    // }
   }
 }

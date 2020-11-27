@@ -1244,9 +1244,21 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
-  font-weight: 400;
-  font-size: 14px;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+  .agreement {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .agreement {
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
 
 .agreement-wrapper {
